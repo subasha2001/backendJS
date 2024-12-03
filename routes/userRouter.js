@@ -31,6 +31,7 @@ router.get(
       return;
     }
 
+    
     await AdminModel.create(sample_admin);
     res.send("Seed is done!");
   })
