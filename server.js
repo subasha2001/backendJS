@@ -11,6 +11,7 @@ const orderRouter = require('./routes/orderRouter');
 const goldSilver = require('./routes/goldSilverRouter');
 const reviewsRouter = require('./routes/reviewsRouter');
 const emailRouter = require('./routes/emailRouter');
+const path = require('path');
 
 dbConnect();
 
@@ -36,7 +37,7 @@ app.use('/api/goldSilver', goldSilver);
 app.use('/api/reviews', reviewsRouter);
 app.use('/api/mailer', emailRouter);
 // app.use("/api", addImageRouter);
-app.use('/uploads', express.static('uploads'));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const port = 3002;
 

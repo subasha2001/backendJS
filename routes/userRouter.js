@@ -4,8 +4,7 @@ const jwt = require("jsonwebtoken");
 const asyncHandler = require("express-async-handler");
 const { UserModel } = require("../models/userModel");
 const { HTTP_BAD_REQUEST } = require("../constants/http_status");
-const { AdminModel } = require("../models/adminUserModel");
-const crypto = require("crypto");
+const AdminModel = require("../models/adminUserModel");
 
 const router = Router();
 
