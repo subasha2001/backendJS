@@ -44,5 +44,3 @@ const port = 3002;
 app.listen(port, () => {
   console.log('connected to ' + port);
 });
-
-// "build": "npm install && tsc"

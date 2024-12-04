@@ -157,9 +157,9 @@ router.put("/getProductValue/:productId", async (req, res) => {
 // Multer storage configuration
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadDir = path.join(__dirname, "uploads");
+    const uploadDir = path.join(__dirname, "../uploads");
     if (!fs.existsSync(uploadDir)) {
-      fs.mkdirSync(uploadDir);  // Create uploads directory if not exists
+      fs.mkdirSync(uploadDir);
     }
     cb(null, uploadDir);
   },
