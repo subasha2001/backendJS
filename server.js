@@ -21,7 +21,7 @@ app.use(
   cors({
     methods: ['GET,POST,PUT,DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'access_token'],
-    origin: ['https://apsinfotech.in', 'http://localhost:4200', 'http://13.61.105.213', 'https://goldpalacejewels.com'],
+    origin: ['http://localhost:4200', 'https://goldpalacejewels.com', 'http://13.53.150.192'],
     credentials: true,
   })
 );
