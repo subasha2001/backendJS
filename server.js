@@ -29,14 +29,14 @@ app.use(
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/api/products', productsRouter);
-app.use('/api/banner', bannerRouter);
-app.use('/api/users', userRouter);
-app.use('/api/orders', orderRouter);
-app.use('/api/goldSilver', goldSilver);
-app.use('/api/reviews', reviewsRouter);
-app.use('/api/mailer', emailRouter);
-// app.use("/api", addImageRouter);
+app.use('/products', productsRouter);
+app.use('/banner', bannerRouter);
+app.use('/users', userRouter);
+app.use('/orders', orderRouter);
+app.use('/goldSilver', goldSilver);
+app.use('/reviews', reviewsRouter);
+app.use('/mailer', emailRouter);
+// app.use("", addImageRouter);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 const port = 3002;
